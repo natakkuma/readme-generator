@@ -128,30 +128,17 @@ const questions = [
 
 //FUNCTION to Wrtie ReadMe File
 function writeToFile(fileName, data) {
-
-    fs.writeFile('./generated/README.md', data, err => {
-
-        // if - error
-        if (err) {
-            console.log(err);
-            return;
-        } 
-
-        // else - successful generation
-        else {
-            console.log("Your README has been successfully created!")
-        }
-    });
+    return fs.writeFileSync(fileName, data);
 }
 
 //FUNCTION to initialize app
 function init() {
-    questions()
-        .then(readmeData => {
-        console.log(readmeData);
-    
-        writeToFile(generateMarkdown(readmeData));
-    });
+    inquirer.prompt(questions)
+    .then(answers => {
+        console.log(answers);
+        writeToFile('../README.md', generateMarkdown({...answers}))
+        console.log('Congratulations! You created a README file!');
+    })
 }
 
 //FUNCTION call to initialize app
