@@ -127,10 +127,32 @@ const questions = [
 ];
 
 //FUNCTION to Wrtie ReadMe File
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+    fs.writeFile('./generated/README.md', data, err => {
+
+        // if - error
+        if (err) {
+            console.log(err);
+            return;
+        } 
+
+        // else - successful generation
+        else {
+            console.log("Your README has been successfully created!")
+        }
+    });
+}
 
 //FUNCTION to initialize app
-function init() {}
+function init() {
+    questions()
+        .then(readmeData => {
+        console.log(readmeData);
+    
+        writeToFile(generateMarkdown(readmeData));
+    });
+}
 
 //FUNCTION call to initialize app
 init();
