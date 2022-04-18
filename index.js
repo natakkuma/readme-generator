@@ -77,7 +77,7 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'Please select a license. (Check all that apply)',
+        message: 'Please select a license. (Select one)',
         choices: ['Apache 2.0', 'GNU GPL v3', 'MIT', 'ISC', 'Mozilla 2.0', 'Boost 1.0']
     },
 
