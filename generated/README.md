@@ -1,9 +1,9 @@
-# Hello Kitty
+# The ReadME Generator Project
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Description 
-  Cats are cool
+  This application is used to generate a readME for a user's project after a series of requested information is entered in the command line.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,20 +14,20 @@
   * [Questions](#questions)
   
   ## Installation 
-  Install by running command lines
+  To install, please enter "npm i" and run "node index".
 
   ## Usage 
-  Cool cats are cool cats
+  To use, please run "node index" and enter requested information.
 
   ## License 
-  This project is license under Apache 2.0
+  This project is license under MIT
 
   ## Contributing 
-  N/A
+  No additional contributions are accepted at this time. Thank you.
 
   ## Tests
-  N/A
+  No tests are included at this time.
 
   ## Questions
-  For additional information or inquiries, please contact me directly at mome@mome.com. Please feel free to view my other projects at https://github.com/mome.
+  For additional information or inquiries, please contact me directly at natakkuma@natakkuma.com. Please feel free to view my other projects at https://github.com/natakkuma.
 
